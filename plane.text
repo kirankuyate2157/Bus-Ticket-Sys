@@ -1,0 +1,57 @@
+# plaing of ticket booking system 
+
+ticket:
+    - ticket number
+    - passenger name
+    - price
+    - rout (source and destination)
+    - time and date of buy ticket
+    - type of ticket
+    - booking type
+    - person name who gave the ticket
+    - device name on which device platform was used for the purchase
+    - area or region 
+    - who controls the that area
+    - profile
+
+passengers:
+    - identity
+    - name 
+    - cards (disability and any special reservation card type)
+    - birth date
+    - location
+    - gender
+    - contact number
+    - address
+
+Bus:
+    - bus identity (bus number)
+    - local knowledge bus name
+    - available seats
+    - arrival time
+    - departure time
+    - departure date
+    - source and destination
+    - daytime
+    - locations
+    - total seats
+    - available seats
+    - seat number
+
+Locations:
+    - stops unique number
+    - route road location
+    - village or stops name address
+    - station area control
+    - tal,dist ,state,
+
+- ticket printing
+- portal (user interface web) or destope application
+- visualization of seates and seate nubers selection
+- resarve seates
+- publica and private pages access
+- admin acesse
+- easy setup system
+
+- central database
+- payment modes 
