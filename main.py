@@ -4,7 +4,7 @@ from tkinter import messagebox
 
 
 root = Tk()
-root.title('Codemy.com - Age Calculator')
+root.title('KK - Age Calculator')
 root.iconbitmap('D:\download')
 root.geometry("500x300")
 

@@ -1,5 +1,5 @@
 # plaing of ticket booking system 
-
+--------------------------------------------------
 ticket:
     - ticket number
     - passenger name
@@ -45,6 +45,8 @@ Locations:
     - station area control
     - tal,dist ,state,
 
+
+----------------------------------------------------------
 - ticket printing
 - portal (user interface web) or destope application
 - visualization of seates and seate nubers selection
@@ -52,6 +54,8 @@ Locations:
 - publica and private pages access
 - admin acesse
 - easy setup system
-
 - central database
 - payment modes 
+
+
+---------------------------------------------------------
