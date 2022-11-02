@@ -2,13 +2,13 @@
 
 class busSeats:
     def showSeats(self):
-        for i in range(1, 18):
+        for i in range(1, 28):
             print("-- ", end='')
         print()
         for i in range(1, 61):
             if (i == 1 or i == 16 or i == 31 or i == 46):
                 print("| ", end="")
-            print("✅", end=" ")
+            print("⚫🟢", end=" ")
             if (i == 15 or i == 45):
                 print(" |")
             elif (i == 30):
