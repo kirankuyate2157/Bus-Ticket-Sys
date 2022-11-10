@@ -59,3 +59,14 @@ Locations:
 
 
 ---------------------------------------------------------
+login page
+available routes,buses
+    -book Seats
+        -types of buses ( Ac/ local / Doubledecar)
+        -prices for that
+        -payments for tickets
+    -timings of bus
+famuse routes,buses
+Search for routes,buses,locations
+   
+
