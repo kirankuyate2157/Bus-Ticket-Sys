@@ -25,7 +25,7 @@ L1.place(x=800, y=10)
 
 def Brand(master):
 
-    tk.Label(master, text="𝕿𝖗𝖎𝖒𝖚𝖗𝖙𝖎 𝕭𝖚𝖘",
+    tk.Label(master, text="Kways 𝕭𝖚𝖘",
              font=('Helvetica 16 bold italic', 58),
              fg="#001117",
              bg="#96e6de").place(x=300, y=10)
