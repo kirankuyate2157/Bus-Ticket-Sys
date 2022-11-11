@@ -8,6 +8,8 @@ from PIL import ImageTk, Image
 from PIL import ImageTk, Image
 from sqlite3 import *
 import sqlite3
+import Login
+from tabs import *
 
 con = sqlite3.Connection('191B052_DATABASE')
 root = Tk()
@@ -21,30 +23,6 @@ L1 = Label(root, image=character, borderwidth=0)
 L1.place(x=800, y=10)
 
 # Create a label
-
-
-def Brand(master):
-
-    tk.Label(master, text="Kways 𝕭𝖚𝖘",
-             font=('Helvetica 16 bold italic', 58),
-             fg="#001117",
-             bg="#96e6de").place(x=300, y=10)
-
-    tk.Label(master,
-             text="Apnoko, ___",
-             fg="#defdfd",
-             bg="#00323e",
-             font="Helvetica 16 bold italic").place(x=100, y=0)
-    tk.Label(master,
-             text=" ____ ,Sapnoko  ",
-             fg="#defdfd",
-             bg="#208e75",
-             font="Helvetica 16 bold italic").place(x=75, y=30)
-    tk.Label(master,
-             text="Karib Laye, _",
-             fg="#defdfd",
-             bg="#00323e",
-             font="Helvetica 16 bold italic").place(x=100, y=60)
 
 
 def show_search_result(li, f, t):

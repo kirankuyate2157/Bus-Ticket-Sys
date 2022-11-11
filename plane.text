@@ -2,7 +2,7 @@
 --------------------------------------------------
 ticket:
     - ticket number
-    - passenger name
+    - passenger name or identity
     - price
     - rout (source and destination)
     - time and date of buy ticket
@@ -15,6 +15,7 @@ ticket:
     - profile
 
 passengers:
+    - bus identity
     - identity
     - name 
     - cards (disability and any special reservation card type)
@@ -39,6 +40,7 @@ Bus:
     - seat number
 
 Locations:
+    - bus identity (bus number)
     - stops unique number
     - route road location
     - village or stops name address
