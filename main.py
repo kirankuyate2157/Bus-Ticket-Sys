@@ -191,54 +191,73 @@ def add_bus():
     L1 = Label(root1, image=character, borderwidth=0)
     L1.place(x=800, y=10)
     Brand(root1)
-
-    Label(root1, text=" Enter The Details Of Bus Operators",
-          font="Arial 26 bold underline").place(x=50, y=325)
-    Label(root1, text="Full Name", font="Arial 13 bold ").place(x=95, y=380)
+    frame1 = tk.Frame(root1, bg="#00323e", bd=400, height=300, width=700,
+                      cursor="target").place(x=50, y=280)
+    Label(root1, text=" Enter The Details Of Bus Operators",  fg="#defdfd",
+          bg="#00323e",
+          font="Arial 26 bold underline").place(x=70, y=280)
+    Label(root1, text="Full Name",   fg="#defdfd",
+          bg="#00323e", font="Arial 13 bold ").place(x=95, y=380)
     name = Entry(root1)
     name.place(x=200, y=380)
-    Label(root1, text="Contact", font="Arial 13 bold ").place(x=95, y=410)
+    Label(root1, text="Contact",  fg="#defdfd",
+          bg="#00323e", font="Arial 13 bold ").place(x=95, y=410)
     contact = Entry(root1)
     contact.place(x=200, y=410)
-    Label(root1, text="Address", font="Arial 13 bold ").place(x=95, y=440)
+    Label(root1, text="Address",   fg="#defdfd",
+          bg="#00323e", font="Arial 13 bold ").place(x=95, y=440)
     add = Entry(root1)
     add.place(x=200, y=440)
 
     def add_operator_details():
-        Label(root1, text="Agency Name",
-              font="Arial 13 bold ").place(x=390, y=520)
+        adx = 830
+        ady = 400
+        frame1 = tk.Frame(root1, bg="#00323e", bd=400, height=300, width=650,
+                          cursor="target").place(x=adx-30, y=ady)
+        Label(root1, text="Agency Name", fg="#defdfd",
+              bg="#00323e",
+              font="Arial 13 bold ").place(x=adx, y=ady+20)
         agency = Entry(root1)
-        agency.place(x=500, y=520)
-        Label(root1, text="Bus Type", font="Arial 13 bold ").place(x=390, y=550)
+        agency.place(x=adx+150, y=ady+20)
+        Label(root1, text="Bus Type", fg="#defdfd",
+              bg="#00323e", font="Arial 13 bold ").place(
+            x=adx, y=ady+50)
         bus_type = Combobox(root1, height=5, width=17, values=[
                             'NON A/C Sleeper ', 'NON A/C Seater', 'A/C Sleeper', 'A/C Seater'])
-        bus_type.place(x=500, y=550)
-        Label(root1, text="From", font="Arial 11 bold ").place(x=390, y=580)
+        bus_type.place(x=adx+150, y=ady+50)
+        Label(root1, text="From", fg="#defdfd",
+              bg="#00323e", font="Arial 11 bold ").place(x=adx, y=ady+80)
         start = Combobox(root1, height=5, width=17, values=[
-                         'Delhi', 'Gorakhpur', 'Goa', 'Indore', 'Jhansi', 'Mumbai', 'Pune'])
-        start.place(x=500, y=580)
-        Label(root1, text="To", font="Arial 11 bold ").place(x=390, y=610)
+                         'Delhi', 'Banglore', 'Goa', 'Indore', 'Surat', 'Mumbai', 'Pune'])
+        start.place(x=adx+150, y=ady+80)
+        Label(root1, text="To", fg="#defdfd",
+              bg="#00323e", font="Arial 11 bold ").place(x=adx, y=ady+110)
         stop = Combobox(root1, height=5, width=17, values=[
-                        'Delhi', 'Gorakhpur', 'Goa', 'Indore', 'Jhansi', 'Mumbai', 'Pune'])
-        stop.place(x=500, y=610)
-        Label(root1, text="Date(dd/mm/yyyy)",
-              font="Arial 11 bold ").place(x=390, y=640)
+                        'Delhi', 'Banglore', 'Goa', 'Indore', 'Jhansi', 'Mumbai', 'Pune'])
+        stop.place(x=adx+150, y=ady+110)
+        Label(root1, text="Date(dd/mm/yyyy)", fg="#defdfd",
+              bg="#00323e",
+              font="Arial 11 bold ").place(x=adx, y=ady+140)
         date = Entry(root1)
-        date.place(x=500, y=640)
-        Label(root1, text="Departure-Time",
-              font="Arial 11 bold ").place(x=390, y=670)
+        date.place(x=adx+150, y=ady+140)
+        Label(root1, text="Departure-Time", fg="#defdfd",
+              bg="#00323e",
+              font="Arial 11 bold ").place(x=adx, y=ady+170)
         departure = Entry(root1)
-        departure.place(x=500, y=670)
-        Label(root1, text="Arrival-Time",
-              font="Arial 11 bold ").place(x=390, y=700)
+        departure.place(x=adx+150, y=ady+170)
+        Label(root1, text="Arrival-Time", fg="#defdfd",
+              bg="#00323e",
+              font="Arial 11 bold ").place(x=adx, y=ady+200)
         arrival = Entry(root1)
-        arrival.place(x=500, y=700)
-        Label(root1, text="Seats", font="Arial 11 bold ").place(x=390, y=730)
+        arrival.place(x=adx+150, y=ady+200)
+        Label(root1, text="Seats",  fg="#defdfd",
+              bg="#00323e", font="Arial 11 bold ").place(x=adx, y=ady+230)
         seats = Entry(root1)
-        seats.place(x=500, y=730)
-        Label(root1, text="Fare", font="Arial 11 bold ").place(x=390, y=760)
+        seats.place(x=adx+150, y=ady+230)
+        Label(root1, text="Fare", fg="#defdfd",
+              bg="#00323e", font="Arial 11 bold ").place(x=adx, y=ady+260)
         rates = Entry(root1)
-        rates.place(x=500, y=760)
+        rates.place(x=adx+150, y=ady+260)
 
         def submit_details():
             a = agency.get()
@@ -262,11 +281,11 @@ def add_bus():
                 root1.destroy()
             root1.destroy()
 
-        Button(root1, text="Save And Continue",
-               command=submit_details).place(x=1200, y=640)
+        Button(root1, text="Save And Continue", fg="#00577c",
+               command=submit_details).place(x=1300, y=640)
 
-    Button(root1, text="Add Details",
-           command=add_operator_details).place(x=460, y=480)
+    Button(root1, text="Add Details", fg="#00577c",
+           command=add_operator_details).place(x=490, y=380)
     root1.mainloop()
 
 
@@ -359,19 +378,11 @@ def search_bus():
     root2.mainloop()
 
 
-def change_color():
-    config(bg="gray51", fg="white")
-
-
-def size_2():
-    text.config(font=('Helvetica bold', 40))
-
-
 Brand(root)
 
 tk.Label(root,
          text="""
-Trimurti has an edge over the other online bus ticket booking platforms in India as we keep implementing
+Kways has an edge over the other online bus ticket booking platforms in India as we keep implementing
 new features keeping in mind the behaviour of our users and the common bus passenger. From Non-AC 
 buses to Volvo AC buses and other luxury buses, you can book all types of bus tickets on this platform.\n
 🌟 Free Cancellation\t\t\t\t\t\t
